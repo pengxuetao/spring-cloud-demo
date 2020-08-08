@@ -12,5 +12,12 @@
     <groupId>com.pxt</groupId>
     <artifactId>provider1</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-dependencies</artifactId>
+            <version>${spring-boot.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>
