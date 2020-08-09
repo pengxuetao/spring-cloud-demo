@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ProviderApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CloudProvider1Application.class, args);
+        SpringApplication.run(ProviderApplication.class, args);
     }
 
 }
