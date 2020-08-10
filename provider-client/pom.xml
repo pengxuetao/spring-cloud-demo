@@ -9,15 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.pxt</groupId>
-    <artifactId>provider1</artifactId>
+    <artifactId>provider-client</artifactId>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.pxt</groupId>
-            <artifactId>provider-client</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-    </dependencies>
 
 </project>

@@ -1,9 +1,9 @@
 spring:
   application:
-    name: provider
+    name: consumer
 
 server:
-  port: 8085
+  port: 8084
 
 #eureka:
 #  instance:

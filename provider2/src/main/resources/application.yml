@@ -1,9 +1,9 @@
 spring:
   application:
-    name: cloud-provider
+    name: provider
 
 server:
-  port: 8085
+  port: 8086
 
 #eureka:
 #  instance:
