@@ -11,8 +11,10 @@
 
     <modules>
         <module>consumer</module>
+        <module>eureka</module>
         <module>provider1</module>
         <module>provider2</module>
+        <module>provider3</module>
         <module>provider-client</module>
     </modules>
 

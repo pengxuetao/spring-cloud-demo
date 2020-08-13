@@ -17,14 +17,13 @@ public class UserController {
     @GetMapping("/user/{id}")
     public User queryUser(@PathVariable("id") String id) {
         User user = new User();
+        user.setAddress("provider1");
         if ("1".equals(id)) {
             user.setId("1");
             user.setUserName("一一一");
-            user.setAddress("yiyihome");
         } else {
             user.setId("999");
             user.setUserName("九九九");
-            user.setAddress("jiujiujiuhome");
         }
         return user;
     }

@@ -1,8 +1,10 @@
 HELP.md
 /target/
 /consumer/target/
+/eureka/target/
 /provider1/target/
 /provider2/target/
+/provider3/target/
 /provider-client/target/
 !.mvn/wrapper/maven-wrapper.jar
 

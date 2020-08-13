@@ -9,7 +9,6 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.pxt</groupId>
     <artifactId>provider1</artifactId>
 
     <dependencies>
@@ -17,6 +16,11 @@
             <groupId>com.pxt</groupId>
             <artifactId>provider-client</artifactId>
             <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
     </dependencies>
 

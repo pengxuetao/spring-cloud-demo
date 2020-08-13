@@ -1,13 +1,10 @@
-package com.pxt.consumer.controller;
+package com.pxt.provider.controller;
 
 import com.pxt.provider.entity.User;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
-
-import javax.annotation.Resource;
 
 /**
  * @author Peng xue-tao
@@ -17,12 +14,17 @@ import javax.annotation.Resource;
 @RequestMapping("/user")
 public class UserController {
 
-    @Resource
-    private RestTemplate restTemplate;
-
     @GetMapping("/user/{id}")
-    public String queryUser(@PathVariable("id") String id) {
-        User result = restTemplate.getForObject("http://provider/user/user/" + id, User.class);
-        return result.toString();
+    public User queryUser(@PathVariable("id") String id) {
+        User user = new User();
+        user.setAddress("provider2");
+        if ("1".equals(id)) {
+            user.setId("1");
+            user.setUserName("一一一");
+        } else {
+            user.setId("999");
+            user.setUserName("九九九");
+        }
+        return user;
     }
 }
