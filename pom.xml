@@ -16,6 +16,7 @@
         <module>provider2</module>
         <module>provider3</module>
         <module>provider-client</module>
+        <module>zuul</module>
     </modules>
 
     <properties>

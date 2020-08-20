@@ -6,6 +6,7 @@ HELP.md
 /provider2/target/
 /provider3/target/
 /provider-client/target/
+/zuul/target/
 !.mvn/wrapper/maven-wrapper.jar
 
 ### STS ###

@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: zuul
+
+server:
+  port: 8083
+
+eureka:
+  instance:
+    instance-id: zuul
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+zuul:
+  routes:
+    api:
+      path: /api/**
+      serviceId: consumer
+  ignored-services: consumer
