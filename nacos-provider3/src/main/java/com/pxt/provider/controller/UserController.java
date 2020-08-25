@@ -19,7 +19,7 @@ public class UserController {
     @GetMapping("/user/{id}")
     public User queryUser(@PathVariable("id") String id) throws Exception {
         User user = new User();
-        user.setAddress("provider1");
+        user.setAddress("provider3");
         if ("1".equals(id)) {
             user.setId("1");
             user.setUserName("一一一");

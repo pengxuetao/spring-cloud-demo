@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: nacos-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 106.53.227.249:8848
+
+server:
+  port: 8084
+
+feign:
+  hystrix:
+    enabled: true
