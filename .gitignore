@@ -2,6 +2,7 @@ HELP.md
 /target/
 /consumer/target/
 /eureka/target/
+/gateway/target/
 /nacos-consumer/target/
 /nacos-provider1/target/
 /nacos-provider2/target/
